@@ -1,0 +1,11 @@
+2022-07-01
+https://github.com/geneontology/go-site/tree/master/releases
+---
+go_BP.json : all terms in GO biological process, along w/ their synonyms. 
+    Generated using process_GO.py. 
+go_BP_subset.json : the same filtered subset of GO_BP in go_subset but used 
+    formatted for precision evaluation.
+go_subset.pkl : a filtered subset of GO_BP that excludes children of irrelevant 
+    terms such as GO:0000003, or GO:0022414.
+go_pretrain.json : synonyms of GO classes to pretrain model.
+

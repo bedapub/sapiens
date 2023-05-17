@@ -1,0 +1,14 @@
+embeddings/bert/*.pkl
+embeddings/lsa/*.pkl
+ontologies/GO/go.obo
+ontologies/CL/cl-basic.obo
+ontologies/CHEBI/chebi*
+pretrained/embedding.pt
+ranker_checkpoints
+checkpoints/**/*.pt
+msigdb/msigdb_*
+test_out.json
+test_out.csv
+logdir/*
+test*
+/xrefs/MRCONSO.RRF

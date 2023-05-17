@@ -1,0 +1,3 @@
+umls2go: cross-reference mappings between UMLS (MRCONSO.RRF) and GO
+umls2cl: cross-reference mappings between UMLS (MRCONSO.RRF) and CL
+hamap2go: from official GO xrefs

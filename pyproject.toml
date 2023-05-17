@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "sapiens"
+version = "0.4.0"
+description = "signature annotation for entity normalisation"
+authors = ["Miles Henderson <miles.henderson@roche.com>"]
+license = "Proprietary, (c) Roche 2022."
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

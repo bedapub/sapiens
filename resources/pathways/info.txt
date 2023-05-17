@@ -1,0 +1,1 @@
+Contains custom keywords for assigning a signature to a signalling pathway of interest (e.g. TNF.NFKB). The set of pathways is very limited (which allows us to do this via string matching), furthermore there is no training data to do this via neural entity linking.

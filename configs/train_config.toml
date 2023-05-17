@@ -1,0 +1,51 @@
+[DATA]
+trainpath = "./datasets/GO/train/train_GO_BP.json"
+valpath = "datasets/GO/val/val_GO_BP.json"
+ontojsonpath = "resources/ontologies/GO/go_BP_subset.json"
+ontopath = "resources/ontologies/GO/go.obo"
+prefix = "GO"
+
+
+[TRAIN]
+bsize = 256
+# OPTIMIZER
+optim = "Adam"  # Adam or SGD
+lr = 0.0001
+epochs = 20
+wdecay = 0.00005
+momentum = 0.1  # SGD only
+# SCHEDULER
+end_factor = 0.1
+# LOSS (ontologicalloss or multisimilarityloss)
+loss = "ontologicalloss"
+# ontologicalloss params
+margin = [0.2, 1.2]
+# multisimilarityloss params
+alpha = 4
+beta = 50
+base = 0.2
+# multisimilarity miner params
+epsilon = 0.1
+# SAMPLER
+m = 3
+# EARLY STOP
+minlen = 100
+tolerance = 15
+# TOPK RETRIEVAL EVALUATION 
+k = 25
+evaluate = true
+epoch_iter = 4
+
+
+[MODEL]
+depth = 2
+aggregate = "attentionpool"
+dropout = 0.2
+init_weights = false
+in_dim = 1024
+block_dim = 256
+out_dim = 256
+embedding_path = "resources/pretrained/embedding_biolinkbert.pt"
+tokenizer = "michiyasunaga/BioLinkBERT-large"
+vocab_size = 28895
+checkpoint = "./resources/checkpoints/run18/checkpoint_e0.pt"
